@@ -17,8 +17,7 @@
 Have you ever asked yourself: what core principles underly
 programming languges? How do I make an informed decision
 about which language to pick? Why are some languages
-apparently faster than others (for some problems)? How would
-I make a formal argument about a program's correctness?
+apparently faster than others?
 
 These are the kinds of questions we're going to get at in
 this class. Together, we'll drill into how the computer
@@ -44,25 +43,23 @@ The lower-level the language, the more complexity we'll deal
 with in terms of having to understand what the computer is
 doing. And so an auxiliary benefit of this class is that
 you'll have to learn more about how computers work. Once we
-understand how the computer works we'll be able to exploit
-the complexity of these low level to our benefit, writing
+understand what the computer's doing at a low level, we'll
+be able to exploit the complexity that complexity, writing
 highly efficient code that might be challenging in
-high-level languages. Dually, understanding concepts from
-high-level languages will help us intuit the core concepts
-of how to reason about programs, and teach us how to build
-better abstractions.
+higher-level languages. Dually, understanding concepts from
+higher-level languages will teach us how to build better
+abstractions.
 
-The goal of this course is to teach you both how computers
-work and how to conceptualize language designs in a broadly
-construed manner. When you're done, you won't know every
-language out there. But I hope that you'll be able to
-intelligently articulate why you choose to use the tools you
-used, and have enough intuition to pick up new languages
-very quickly.
+The goal of this course is to teach you both the nuts and
+bolts of computer languages and to help built intuition
+about programming paradigms in a broadly construed manner.
+When you're done, you still won't know every language out
+there. But we hope that you'll be able to intelligently
+articulate why you choose to use the tools you used, and
+have enough intuition to pick up new languages very quickly.
 
 @tabular[#:style 'boxed
          #:sep @hspace[1]
-         #:row-properties '(bottom-border ())
          (list (list @bold{Location} @elem{Stokes Hall, Room 4})
                (list @bold{Times} @elem{MWF: 11:30AM-12:30PM})
                (list @bold{Labs Location} @elem{Hilles Hall, Room 110})
@@ -71,7 +68,8 @@ very quickly.
 
 Note that attendence in lectures is a requirement of the
 course. Lectures are frequently interactive, and depend on
-student involvement.
+student involvement. Lab attendence is option on weeks where
+you have completed the assigned lab work.
 
 @tabular[#:style 'boxed
          #:sep @hspace[1]
