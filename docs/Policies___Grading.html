@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=0.8"/><title>Policies / Grading</title><link rel="stylesheet" type="text/css" href="scribble.css" title="default"/><link rel="stylesheet" type="text/css" href="manual-style.css" title="default"/><link rel="stylesheet" type="text/css" href="manual-racket.css" title="default"/><script type="text/javascript" src="scribble-common.js"></script><script type="text/javascript">
+(function() {
+  document.write('<link rel="stylesheet" href="katex/katex.min.css" />');
+})();(function() {document.write('<scr' + 'ipt type="text/javascript" src="katex/katex.min.js"></scr' + 'ipt>');})();(function(f) {
+  // A "simple" onLoad function
+  if (window.document.readyState == "complete") {
+    f();
+  } else if (window.document.addEventListener) {
+    window.document.addEventListener("DOMContentLoaded", f, false);
+  } else if (window.attachEvent) {
+    window.attachEvent("onreadystatechange", function() {
+      if (window.document.readyState == "complete") {
+        f();
+      }
+    });
+  } else {
+    var oldLoad = window.onload;
+    if (typeof(oldLoad) == "function") {
+      window.onload = function() {
+        try {
+          oldLoad();
+        } finally {
+          f();
+        }
+      };
+    } else {
+      window.onload = f;
+    }
+  }
+})(function() {
+  // This is an ugly way to change the doctype, in case the scribble document
+  // did not use (with-html5).
+  if (!(document.doctype && document.doctype.publicId == '')) {
+    if (console && console.log) {
+      console.log("Re-wrote the document to use the HTML5 doctype.\n"
+                  + "  Consider using the following declaration:\n"
+                  + "      @title[#:style (with-html5 manual-doc-style)]{…}");
+    }
+    var wholeDoc = '<!doctype HTML>\n' + document.documentElement.outerHTML;
+    document.open();
+    document.clear();
+    document.write(wholeDoc);
+  }
+  var inlineElements = document.getElementsByClassName("texMathInline");
+  for (var i = 0; i < inlineElements.length; i++) {
+    var e = inlineElements[i];
+    katex.render(e.textContent, e, { displayMode:false, throwOnError:false });
+  }
+  var displayElements = document.getElementsByClassName("texMathDisplay");
+  for (var i = 0; i < displayElements.length; i++) {
+    var e = displayElements[i];
+    katex.render(e.textContent, e, { displayMode:true, throwOnError:false });
+  }
+});
+</script><script type="text/javascript" src="manual-racket.js"></script><!--[if IE 6]><style type="text/css">.SIEHidden { overflow: hidden; }</style><![endif]--></head><body id="scribble-racket-lang-org"><div class="tocset"><div class="tocview"><div class="tocviewlist tocviewlisttopspace"><div class="tocviewtitle"><table cellspacing="0" cellpadding="0"><tr><td style="width: 1em;"><a href="javascript:void(0);" title="Expand/Collapse" class="tocviewtoggle" onclick="TocviewToggle(this,&quot;tocview_0&quot;);">&#9660;</a></td><td></td><td><a href="index.html" class="tocviewlink" data-pltdoc="x">CMSC245:<span class="mywbr"> &nbsp;</span> Principles of Programming Languges</a></td></tr></table></div><div class="tocviewsublisttop" style="display: block;" id="tocview_0"><table cellspacing="0" cellpadding="0"><tr><td align="right"></td><td><a href="" class="tocviewselflink" data-pltdoc="x">Policies /<span class="mywbr"> &nbsp;</span> Grading</a></td></tr><tr><td align="right"></td><td><a href="Schedule___Lectures.html" class="tocviewlink" data-pltdoc="x">Schedule /<span class="mywbr"> &nbsp;</span> Lectures</a></td></tr><tr><td align="right"></td><td><a href="Piazza.html" class="tocviewlink" data-pltdoc="x">Piazza</a></td></tr><tr><td align="right"></td><td><a href="Resources.html" class="tocviewlink" data-pltdoc="x">Resources</a></td></tr><tr><td align="right"></td><td><a href="Collaboration_and_the_Honor_Code.html" class="tocviewlink" data-pltdoc="x">Collaboration and the Honor Code</a></td></tr></table></div></div><div class="tocviewlist"><table cellspacing="0" cellpadding="0"><tr><td style="width: 1em;"><a href="javascript:void(0);" title="Expand/Collapse" class="tocviewtoggle" onclick="TocviewToggle(this,&quot;tocview_1&quot;);">&#9658;</a></td><td></td><td><a href="" class="tocviewselflink" data-pltdoc="x">Policies /<span class="mywbr"> &nbsp;</span> Grading</a></td></tr></table><div class="tocviewsublistbottom" style="display: none;" id="tocview_1"><table cellspacing="0" cellpadding="0"><tr><td align="right">1&nbsp;</td><td><a href="#%28part._.Expectations_and_.Policies%29" class="tocviewlink" data-pltdoc="x">Expectations and Policies</a></td></tr><tr><td align="right">2&nbsp;</td><td><a href="#%28part._.Extentions%29" class="tocviewlink" data-pltdoc="x">Extentions</a></td></tr><tr><td align="right">3&nbsp;</td><td><a href="#%28part._.Grading%29" class="tocviewlink" data-pltdoc="x">Grading</a></td></tr></table></div></div></div><div class="tocsub"><div class="tocsubtitle">On this page:</div><table class="tocsublist" cellspacing="0"><tr><td><span class="tocsublinknumber">1<tt>&nbsp;</tt></span><a href="#%28part._.Expectations_and_.Policies%29" class="tocsubseclink" data-pltdoc="x">Expectations and Policies</a></td></tr><tr><td><span class="tocsublinknumber">2<tt>&nbsp;</tt></span><a href="#%28part._.Extentions%29" class="tocsubseclink" data-pltdoc="x">Extentions</a></td></tr><tr><td><span class="tocsublinknumber">3<tt>&nbsp;</tt></span><a href="#%28part._.Grading%29" class="tocsubseclink" data-pltdoc="x">Grading</a></td></tr></table></div></div><div class="maincolumn"><div class="main"><div class="versionbox"><span class="version">6.10</span></div><div class="navsettop"><span class="navleft"><div class="nosearchform"></div>&nbsp;&nbsp;</span><span class="navright">&nbsp;&nbsp;<a href="index.html" title="backward to &quot;CMSC245: Principles of Programming Languges&quot;" data-pltdoc="x">&larr; prev</a>&nbsp;&nbsp;<a href="index.html" title="up to &quot;CMSC245: Principles of Programming Languges&quot;" data-pltdoc="x">up</a>&nbsp;&nbsp;<a href="Schedule___Lectures.html" title="forward to &quot;Schedule / Lectures&quot;" data-pltdoc="x">next &rarr;</a></span>&nbsp;</div><h3><a name="(part._.Policies___.Grading)"></a>Policies / Grading</h3><h4>1<tt>&nbsp;</tt><a name="(part._.Expectations_and_.Policies)"></a>Expectations and Policies</h4><p>We expect that you will attend each course lecture. If you
+plan to or inadvertently miss a lecture, please let us know.
+Medical absences will of course be excused, but we want to
+ensure that we can work together to get you back on track in
+the course.</p><h4>2<tt>&nbsp;</tt><a name="(part._.Extentions)"></a>Extentions</h4><p>Completing projects on time is an essential requirement for
+progressing along in the course. Because this course (like
+most programming courses) is highly incremental, we will
+make our best effort to ensure that adequate time is given
+to complete projects and labs. In light of that, we will be
+hesitant to move deadlines for the whole class.</p><p>Instead, each student will receive four lag days throughout
+the whole semester in which a project or lab may be turned
+in late, not using more than two days on any one assignment.
+For exmaple, you may turn in the first two labs two days
+late (each). But after that, no subsequent work will be
+accepted late.</p><h4>3<tt>&nbsp;</tt><a name="(part._.Grading)"></a>Grading</h4><p><table cellspacing="0" cellpadding="0" class="boxed" style="border-collapse: collapse;"><tr><td style="border-bottom: 1px solid black;"><p><span style="font-weight: bold">Category</span></p></td><td style="border-bottom: 1px solid black;"><p><span style="font-weight: bold">Allocation</span></p></td></tr><tr><td><p>Labs / Projects</p></td><td><p>50%</p></td></tr><tr><td><p>Exams</p></td><td><p>40%</p></td></tr><tr><td><p>Participation</p></td><td><p>10%</p></td></tr></table></p><p>After assigning a percentage grade based on the above table,
+we will assign grades from 1.0-4.0. We consider a 50% being
+the lowest percentage that earns a 1.0, and 100% being the
+highest that gets a 4.0. The spreadsheet formula is:</p><p><span class="texMathDisplay">\dfrac{(percentage-0.5) \cdot 3.3}{0.5} + 0.85</span></p><p>We then round to the closest grade we can report to the
+registrar, i.e. 3.46 becomes a 3.3, but 3.54 becomes a 3.7.
+Note that Haverford grading policy will not allow us to
+round to the nearest tenth, much as we might want.</p><p>The combined effect of the above makes for the following rough cutoffs:</p><p><table cellspacing="0" cellpadding="0" class="boxed" style="border-collapse: collapse;"><tr><td style="border-bottom: 1px solid black;"><p>Lowest percent to get grade of 1.0 is about...</p></td><td style="border-bottom: 1px solid black;"><p>50%</p></td></tr><tr><td><p>2.0</p></td><td><p>65%</p></td></tr><tr><td><p>2.3</p></td><td><p>70%</p></td></tr><tr><td><p>2.7</p></td><td><p>75%</p></td></tr><tr><td><p>3.0</p></td><td><p>80%</p></td></tr><tr><td><p>3.3</p></td><td><p>85%</p></td></tr><tr><td><p>3.7</p></td><td><p>90%</p></td></tr><tr><td><p>4.0</p></td><td><p>95%</p></td></tr></table></p><blockquote class="SCentered"><p><span style="font-style: italic">Parting thoughts from Dave on grading</span></p></blockquote><p>This typically gives a fairly satisfactory distribution of
+grades at the top end of the scale, but the lower end of the
+scale often goes too far into the low grades; in such cases
+I often either "curve up" the lower end of the overall scale
+or the lower end of one of the components that is having a
+dominating effect on the overall grade (i.e., if the
+variance in exam grades is much greater than that of the lab
+grades, I may curve the exams before averaging rather than
+the overall percentages); I apply this curve only to work
+that was actually submitted, so it doesn&#8217;t help those who
+just didn&#8217;t hand in anything; I almost never "curve up" the
+scores above 85%; I don&#8217;t think I&#8217;ve ever "curved down" the
+top scores. I just take this as a sign that we&#8217;ve had a
+good class or perhaps I can add another very challenging lab
+assignment or something. The average grade of students who
+didn&#8217;t "disappear" from my class (i.e., end up with several
+0&#8217;s for labs) and then go on to fail the course, is
+typically in the 3.1-3.3 range, though of course this can
+vary a lot for small classes.</p><div class="navsetbottom"><span class="navleft"><div class="nosearchform"></div>&nbsp;&nbsp;</span><span class="navright">&nbsp;&nbsp;<a href="index.html" title="backward to &quot;CMSC245: Principles of Programming Languges&quot;" data-pltdoc="x">&larr; prev</a>&nbsp;&nbsp;<a href="index.html" title="up to &quot;CMSC245: Principles of Programming Languges&quot;" data-pltdoc="x">up</a>&nbsp;&nbsp;<a href="Schedule___Lectures.html" title="forward to &quot;Schedule / Lectures&quot;" data-pltdoc="x">next &rarr;</a></span>&nbsp;</div></div></div><div id="contextindicator">&nbsp;</div></body></html>
