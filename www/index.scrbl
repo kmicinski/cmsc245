@@ -7,12 +7,18 @@
 @(define (capitalize-first-letter str)
   (regexp-replace #rx"^." str string-upcase))
 
+@margin-note*{@bold{Note:} please make sure you take the
+ @link["https://moodle.haverford.edu/mod/quiz/view.php?id=10779"]{CMSC245 pre-test on Moodle} before the semester starts.}
+
 @(define term "fall")
 @(define year "2017")
-@emph{Haverford College Computer Science, @(capitalize-first-letter term), @year}
+@emph{Haverford College CS. @(capitalize-first-letter term), @year}
 
-@author+email[(hyperlink "http://kmicinski.com" "Kristopher Micinski") "kris@cs.haverford.edu"]
-@author+email[(hyperlink "https://www.haverford.edu/users/dwonnaco " "David Wonnacott") "davew@cs.haverford.edu"]
+Instructors:
+@(linebreak)
+@(nonbreaking @author+email[(hyperlink "http://kmicinski.com" "Kristopher Micinski") "kris@cs.haverford.edu"])
+@(linebreak)
+@(nonbreaking @author+email[(hyperlink "https://www.haverford.edu/users/dwonnaco " "David Wonnacott") "davew@cs.haverford.edu"])
 
 Have you ever asked yourself: what core principles underly
 programming languges? How do I make an informed decision
