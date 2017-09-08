@@ -7,9 +7,6 @@
 @(define (capitalize-first-letter str)
   (regexp-replace #rx"^." str string-upcase))
 
-@margin-note*{@bold{Note:} please make sure you take the
- @link["https://moodle.haverford.edu/mod/quiz/view.php?id=10779"]{CMSC245 pre-test on Moodle} before the semester starts.}
-
 @(define term "fall")
 @(define year "2017")
 @emph{Haverford College CS. @(capitalize-first-letter term), @year}
