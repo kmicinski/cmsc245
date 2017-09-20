@@ -79,9 +79,14 @@ you have completed the assigned lab work.
          #:row-properties '(bottom-border ())
          (list (list @bold{Staff} 'cont 'cont 'cont)
                (list @bold{Name} @bold{email} @bold{Office} @bold{Hours})
-               (list "Kris Micinski" "kris@cs.haverford.edu" "L305" "TBD")
+               (list "Kris Micinski" "kris@cs.haverford.edu" "L305" "M 1230-1300")
+               (list "" 'cont 'cont "W 1700-1730")
+               (list "" 'cont 'cont "F 1100-1130")
+               (list "" 'cont 'cont "F for ~25min post-class")
                (list "Dave Wonnacott" "davew@cs.haverford.edu" "L307" "TBD")
 )]
+
+Office hours are also available by appointment. You can find Kris' office hours, and other schedule, at @link["http://whereskris.com"]{@code{whereskris.com}}.
 
 @hyperlink["https://drive.google.com/open?id=1AoUPVN0AHjtrMR_As-1Zgkfpsp8&usp=sharing" "(Google maps link to all locations relevant to CMSC245)"]
 

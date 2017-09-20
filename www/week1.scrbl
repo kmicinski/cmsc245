@@ -45,6 +45,13 @@ you'd look here.
 
 @link["./slides/09-06-intro.key"]{(Slides in Keynote)} and @link["./slides/09-06-intro.pdf"]{(Slides in PDF)}
 
+@section{Friday's Lecture}
+
+@itemlist[
+ @item{@link["./slides/Friday0908-C++.key"]{(Slides in Keynote)} and @link["./slides/Friday0908-C++.pdf"]{(Slides in PDF)}}
+ @item{@link["https://github.com/kmicinski/cmsc245examples/blob/master/c%2B%2B/vectors-friday-09-07.cc"]{Code example that I built up in class}}
+]
+
 @section{@bold{Goals for this week}}
 
 @itemlist[

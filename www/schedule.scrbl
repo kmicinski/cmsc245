@@ -10,4 +10,5 @@ and labs. On this page, I (Kris) will keep some of my
 original material for this course.
 
 @include-section{week1.scrbl}
+@include-section{week2.scrbl}
 
