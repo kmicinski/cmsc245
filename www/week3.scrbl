@@ -16,6 +16,27 @@ and classes in C++.
 @link["./slides/classes-c++.key"]{Slides in keynote} and
 @link["./slides/classes-c++.pdf"]{PDF}.
 
+@subsection{Code from class}
+@itemlist[
+ @item{@link["https://github.com/kmicinski/cmsc245examples/blob/master/c%2B%2B/shapes.h"]{@tt{shapes.h}} defines the shape classes}
+ @item{@link["https://github.com/kmicinski/cmsc245examples/blob/master/c%2B%2B/shapes.cc"]{@tt{shapes.cc}} gives some implementation}
+ @item{@link["https://github.com/kmicinski/cmsc245examples/blob/master/c%2B%2B/shapesmain.cc"]{@tt{shapesmain.cc}} uses it in a main function}
+ @item{@link["https://github.com/kmicinski/cmsc245examples/blob/master/c%2B%2B/README.md"]{@tt{README.md} tells you how to run it}}
+ ]
+
+@emph{Please ask me questions!}
+
+@section{Pointers}
+
+Pointers are one of the most interesting and challenging aspects of
+C/C++.
+
+@itemlist[
+  @item{Slides in @link["./slides/pointers-c++.key"]{Keynote} and @link["./slides/pointers-c++.pdf"]{PDF}}
+  @item{The code is @link["https://github.com/kmicinski/cmsc245examples/blob/master/c%2B%2B/pointers.cc"]{here}. Please read the comment on how to compile and run.}
+  @item{Please follow along with the @link["https://hc.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f36e9a05-e2a0-47eb-9b7a-9d9b19b717c6"]{video} of me coding all of this up.}
+]
+
 @section{Required Reading}
 
 You are @emph{required} to read the C++ tour from section
